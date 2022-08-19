@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TimerLocation : MonoBehaviour
+public class AnimTimer : MonoBehaviour
 {
 
     public GameObject TimerAnim;
-    int i = 1;
+    public GameObject Timer;
+    public int i = 1;
 
     // Update is called once per frame
     void Update()
@@ -16,6 +17,7 @@ public class TimerLocation : MonoBehaviour
         if(i > 500)
         {
             TimerAnim.SetActive(false);
+            Timer.SetActive(true);
         }
     }
 }

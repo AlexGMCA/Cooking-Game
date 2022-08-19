@@ -62,7 +62,7 @@ public class Timer : MonoBehaviour
             if(time > 500)
             {
                 AnimTimer.SetActive(false);
-                GlobalVariables.hours = 25;
+                GlobalVariables.hours = 1;
                 if(GlobalVariables.AtFridge == true){
                 GlobalVariables.Marinated = true;
                 }
