@@ -16,4 +16,5 @@ public class GlobalVariables : MonoBehaviour
     public bool SaltAndPepper = false;
     public bool Whisked = false;
     public bool InFridge = false;
+    public int hours = 1;
 }
