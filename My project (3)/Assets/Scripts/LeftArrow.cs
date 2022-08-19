@@ -4,26 +4,20 @@ using UnityEngine;
 
 public class LeftArrow : MonoBehaviour
 {
-    //Calling the Default background, ChoppingBoard, Arrows and Global Variables.
+    //Calling GameObjects and Global Variables.
     public GameObject Stove;
     public GlobalVariables GlobalVariables;
-
     public GameObject DefaultBackground;
-
     public GameObject Board;
-
     public GameObject RArrow;
-
     public GameObject LArrow;
-
     public GameObject LeftArrowImage;
-
     public GameObject RightArrowImage;
-
     public GameObject FArrow;
-
     public GameObject FArrowImage;
+    public GameObject Knife;
 
+    //Making leftarrow dissapear on certain scenes.
     void Update()
     {
         if(GlobalVariables.InDefault == true || GlobalVariables.AtBoard == true || GlobalVariables.InFridge == true)
@@ -41,9 +35,10 @@ public class LeftArrow : MonoBehaviour
         }
     }
 
-    //Changes background Onclick.
+    //Changes background Onclick and make cetain objects appear and dissapear.
     public void Onclick()
     {
+        Knife.SetActive(true);  
         Stove.SetActive(false);
         DefaultBackground.SetActive(true);
         GlobalVariables.InStove = false;

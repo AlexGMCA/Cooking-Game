@@ -77,7 +77,7 @@ public class BowlSpriteSwap : MonoBehaviour
             this.gameObject.GetComponent<SpriteRenderer>().sprite = BeefBowl;
             beef.SetActive(false);
         }
-        while(collision.gameObject.name == ("Mid") || collision.gameObject.name == ("Bottom") || collision.gameObject.name == ("Top"))
+        if(collision.gameObject.name == ("Mid") || collision.gameObject.name == ("Bottom") || collision.gameObject.name == ("Top"))
         {
             GlobalVariables.AtFridge = true;
         }

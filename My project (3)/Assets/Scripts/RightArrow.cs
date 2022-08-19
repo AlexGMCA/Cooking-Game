@@ -5,20 +5,16 @@ using UnityEngine.UI;
 
 public class RightArrow : MonoBehaviour
 {   
-    //Calling the stove background, ChoppingBoard, Arrows and Global Variables.
+    //Calling GameObjects and Global Variables.
     public GameObject Stove;
     public GlobalVariables GlobalVariables;
     public GameObject Board;
-
     public GameObject LeftArrowImage;
-
     public GameObject LArrow;
-
     public GameObject RightArrowImage;
-
     public GameObject FArrow;
-    
     public GameObject FArrowImage;
+    public GameObject Knife;
 
     void Update()
     {
@@ -32,6 +28,7 @@ public class RightArrow : MonoBehaviour
     //Changes background Onclick and activates arrows.
     public void Onclick()
     {
+        Knife.SetActive(false);
         Stove.SetActive(true);
         GameObject.Find("DefaultBackground").SetActive(false);
         GlobalVariables.InStove = true;
