@@ -10,7 +10,7 @@ public class BowlLocation : MonoBehaviour
     public GameObject AnimBowl;
     public Transform Bowlloc;
     public Transform AnimBowlLoc;
-    float time = 1;
+    int time = 1;
     void Start()
     {   
 

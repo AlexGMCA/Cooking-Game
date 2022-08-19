@@ -16,7 +16,7 @@ public class BowlSpriteSwap : MonoBehaviour
     public GameObject Whisk;
     public GameObject beef;
     public Sprite BeefBowl;
-
+    public int doubleclicked = 0;
 
     //On Collison the sprite will change.
     private void OnCollisionEnter2D(Collision2D collision)
@@ -77,6 +77,26 @@ public class BowlSpriteSwap : MonoBehaviour
             this.gameObject.GetComponent<SpriteRenderer>().sprite = BeefBowl;
             beef.SetActive(false);
         }
+        while(collision.gameObject.name == ("Mid") || collision.gameObject.name == ("Bottom") || collision.gameObject.name == ("Top"))
+        {
+            GlobalVariables.AtFridge = true;
+        }
     }
 
+    private void OnMouseDown()
+    {
+        if(GlobalVariables.Marinated == true)
+        {
+        doubleclicked = doubleclicked + 1;
+        }
+    }
+
+    void Update()
+    {
+        if(doubleclicked > 2 && GlobalVariables.Marinated == true)
+        {
+            beef.SetActive(true);
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = Bowl6;
+        }
+    }
 }

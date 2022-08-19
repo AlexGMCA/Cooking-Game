@@ -9,7 +9,9 @@ public class Timer : MonoBehaviour
     public Sprite Second;
     public Sprite Third;
     public Sprite Fourth;
+    public GameObject AnimTimer;
     public GlobalVariables GlobalVariables;
+    public int time = 0;
 
     //when the timer is clicked the hours variables is plus one
     void OnMouseDown()
@@ -51,6 +53,20 @@ public class Timer : MonoBehaviour
         if(GlobalVariables.hours == 8)
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = Fourth;
+        }
+        if(GlobalVariables.hours > 8 && GlobalVariables.hours < 20)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = First;
+            AnimTimer.SetActive(true);
+            time = time + 1;
+            if(time > 500)
+            {
+                AnimTimer.SetActive(false);
+                GlobalVariables.hours = 25;
+                if(GlobalVariables.AtFridge == true){
+                GlobalVariables.Marinated = true;
+                }
+            }
         }
     }
 }
