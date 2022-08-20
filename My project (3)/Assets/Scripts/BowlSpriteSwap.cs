@@ -93,7 +93,7 @@ public class BowlSpriteSwap : MonoBehaviour
 
     void Update()
     {
-        if(doubleclicked > 2 && GlobalVariables.Marinated == true)
+        if(doubleclicked > 2 && GlobalVariables.Marinated == true && GlobalVariables.BeefInPan == false)
         {
             beef.SetActive(true);
             this.gameObject.GetComponent<SpriteRenderer>().sprite = Bowl6;

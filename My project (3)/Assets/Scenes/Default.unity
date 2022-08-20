@@ -1778,6 +1778,7 @@ GameObject:
   - component: {fileID: 296211545}
   - component: {fileID: 296211549}
   - component: {fileID: 296211546}
+  - component: {fileID: 296211550}
   m_Layer: 0
   m_Name: Pan
   m_TagString: Untagged
@@ -1919,6 +1920,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b9f6f9bd9e3a2f40aeafe17e8b3771d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &296211550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296211544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 932539f18744e2047b98cccc6b25eddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BeefPan: {fileID: 21300000, guid: 61f702d979ef8774d82935858068901c, type: 3}
+  GlobalVariables: {fileID: 759819944}
+  beef: {fileID: 1510101203}
+  BowlSpriteSwap: {fileID: 0}
 --- !u!1 &326792349
 GameObject:
   m_ObjectHideFlags: 0
@@ -5204,6 +5221,7 @@ MonoBehaviour:
   hours: 1
   Marinated: 0
   AtFridge: 0
+  BeefInPan: 0
 --- !u!4 &759819945
 Transform:
   m_ObjectHideFlags: 0
@@ -6684,7 +6702,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1202557264}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1019, y: -9.5, z: 366.3581}
+  m_LocalPosition: {x: -1017, y: -9.5, z: 366.3581}
   m_LocalScale: {x: 200, y: 200, z: 1}
   m_Children: []
   m_Father: {fileID: 558501977}
@@ -6722,7 +6740,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerAnim: {fileID: 1202557264}
-  Timer: {fileID: 0}
   i: 1
 --- !u!212 &1202557268
 SpriteRenderer:
@@ -8261,6 +8278,7 @@ GameObject:
   - component: {fileID: 1510101208}
   - component: {fileID: 1510101209}
   - component: {fileID: 1510101207}
+  - component: {fileID: 1510101210}
   m_Layer: 0
   m_Name: Beef
   m_TagString: Untagged
@@ -8414,6 +8432,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 816ae16cb81788a409917827fedcf72b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1510101210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510101203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c834ea0455c6c8f42a8a0f8acdd42940, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BLoco: {fileID: 1510101206}
+  LocoB: {fileID: 1742670962}
+  BowlSpriteSwap: {fileID: 1742670966}
 --- !u!1 &1535304991
 GameObject:
   m_ObjectHideFlags: 0
@@ -8733,6 +8766,7 @@ MonoBehaviour:
   RightArrowImage: {fileID: 1256515908}
   FArrow: {fileID: 15645920}
   FArrowImage: {fileID: 1174615864}
+  Knife: {fileID: 1373745125}
 --- !u!1 &1563043832
 GameObject:
   m_ObjectHideFlags: 0
@@ -10295,6 +10329,7 @@ MonoBehaviour:
   RightArrowImage: {fileID: 1256515908}
   FArrow: {fileID: 15645920}
   FArrowImage: {fileID: 1174615864}
+  Knife: {fileID: 1373745125}
 --- !u!1 &1873388513
 GameObject:
   m_ObjectHideFlags: 0

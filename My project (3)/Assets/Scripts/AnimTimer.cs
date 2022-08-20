@@ -6,7 +6,6 @@ public class AnimTimer : MonoBehaviour
 {
 
     public GameObject TimerAnim;
-    public GameObject Timer;
     public int i = 1;
 
     // Update is called once per frame
@@ -17,7 +16,6 @@ public class AnimTimer : MonoBehaviour
         if(i > 500)
         {
             TimerAnim.SetActive(false);
-            Timer.SetActive(true);
         }
     }
 }
