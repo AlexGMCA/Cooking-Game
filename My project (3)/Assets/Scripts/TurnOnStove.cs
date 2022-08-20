@@ -15,5 +15,6 @@ public class TurnOnStove : MonoBehaviour
         Dial1.SetActive(false);
         Dial2.SetActive(true);
         Activated.SetActive(true);
+        GlobalVariables.Cooking = true;
     }
 }

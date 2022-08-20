@@ -20,4 +20,6 @@ public class GlobalVariables : MonoBehaviour
     public bool Marinated = false;
     public bool AtFridge = false;
     public bool BeefInPan = false;
+    public bool Cooking = false;
+    public bool Cooked = false;
 }
