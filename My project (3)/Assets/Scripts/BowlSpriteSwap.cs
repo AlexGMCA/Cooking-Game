@@ -16,6 +16,7 @@ public class BowlSpriteSwap : MonoBehaviour
     public GameObject Whisk;
     public GameObject beef;
     public Sprite BeefBowl;
+    public Transform XBowl;
     public int doubleclicked = 0;
 
     //On Collison the sprite will change.
@@ -77,10 +78,11 @@ public class BowlSpriteSwap : MonoBehaviour
             this.gameObject.GetComponent<SpriteRenderer>().sprite = BeefBowl;
             beef.SetActive(false);
         }
-        if(collision.gameObject.name == ("Mid") || collision.gameObject.name == ("Bottom") || collision.gameObject.name == ("Top"))
-        {
-            GlobalVariables.AtFridge = true;
-        }
+        //registering that the bowl is in the fridge.
+        //if(collision.gameObject.name == ("Mid") || collision.gameObject.name == ("Bottom") || collision.gameObject.name == ("Top"))
+        //{
+        //    GlobalVariables.AtFridge = true;
+        //}
     }
 
     private void OnMouseDown()
@@ -97,6 +99,16 @@ public class BowlSpriteSwap : MonoBehaviour
         {
             beef.SetActive(true);
             this.gameObject.GetComponent<SpriteRenderer>().sprite = Bowl6;
+        }
+
+        if(XBowl.position.x > 355 && XBowl.position.x < 680)
+        {
+            GlobalVariables.AtFridge = true;
+        }
+
+        if(XBowl.position.x < 355 || XBowl.position.x > 680)
+        {
+            GlobalVariables.AtFridge = false;
         }
     }
 }

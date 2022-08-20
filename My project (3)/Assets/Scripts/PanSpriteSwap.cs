@@ -8,6 +8,7 @@ public class PanSpriteSwap : MonoBehaviour
     public GlobalVariables GlobalVariables;
     public GameObject beef;
     public BowlSpriteSwap BowlSpriteSwap;
+    public GameObject Parent;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -16,6 +17,11 @@ public class PanSpriteSwap : MonoBehaviour
             this.gameObject.GetComponent<SpriteRenderer>().sprite = BeefPan;
             GlobalVariables.BeefInPan = true;
             beef.SetActive(false);
+        }
+
+        if(GlobalVariables.BeefInPan == true && collision.gameObject.name == ("CookTop"))
+        {
+            Parent.SetActive(false);
         }
     }
 }
