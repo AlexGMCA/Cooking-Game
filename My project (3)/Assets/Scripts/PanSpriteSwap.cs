@@ -9,6 +9,8 @@ public class PanSpriteSwap : MonoBehaviour
     public GameObject beef;
     public BowlSpriteSwap BowlSpriteSwap;
     public GameObject Parent;
+    public GameObject StoveTop;
+    public GameObject TopDownPan;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -19,9 +21,11 @@ public class PanSpriteSwap : MonoBehaviour
             beef.SetActive(false);
         }
 
-        if(GlobalVariables.BeefInPan == true && collision.gameObject.name == ("CookTop"))
+        if(GlobalVariables.BeefInPan == true && collision.gameObject.name == ("CookingTop"))
         {
             Parent.SetActive(false);
+            StoveTop.SetActive(true);
+            TopDownPan.SetActive(true);
         }
     }
 }
