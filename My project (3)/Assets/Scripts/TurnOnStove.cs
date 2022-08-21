@@ -17,4 +17,5 @@ public class TurnOnStove : MonoBehaviour
         Activated.SetActive(true);
         GlobalVariables.Cooking = true;
     }
+
 }

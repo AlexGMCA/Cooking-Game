@@ -15,12 +15,13 @@ public class RightArrow : MonoBehaviour
     public GameObject FArrow;
     public GameObject FArrowImage;
     public GameObject Knife;
+    public GameObject RArrow;
 
     void Update()
     {
         if(GlobalVariables.InStove == true || GlobalVariables.AtBoard == true)
         {
-            gameObject.SetActive(false);
+            RArrow.SetActive(false);
             RightArrowImage.SetActive(false);
         }
     }

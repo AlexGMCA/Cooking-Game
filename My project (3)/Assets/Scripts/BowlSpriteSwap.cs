@@ -78,11 +78,6 @@ public class BowlSpriteSwap : MonoBehaviour
             this.gameObject.GetComponent<SpriteRenderer>().sprite = BeefBowl;
             beef.SetActive(false);
         }
-        //registering that the bowl is in the fridge.
-        //if(collision.gameObject.name == ("Mid") || collision.gameObject.name == ("Bottom") || collision.gameObject.name == ("Top"))
-        //{
-        //    GlobalVariables.AtFridge = true;
-        //}
     }
 
     private void OnMouseDown()
@@ -101,6 +96,7 @@ public class BowlSpriteSwap : MonoBehaviour
             this.gameObject.GetComponent<SpriteRenderer>().sprite = Bowl6;
         }
 
+        //registering that the bowl is in the fridge.
         if(XBowl.position.x > 355 && XBowl.position.x < 680)
         {
             GlobalVariables.AtFridge = true;

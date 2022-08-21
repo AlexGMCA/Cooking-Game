@@ -2133,10 +2133,16 @@ MonoBehaviour:
   BeefPan: {fileID: 21300000, guid: 61f702d979ef8774d82935858068901c, type: 3}
   GlobalVariables: {fileID: 759819944}
   beef: {fileID: 1510101203}
-  BowlSpriteSwap: {fileID: 0}
   Parent: {fileID: 1847513725}
   StoveTop: {fileID: 699495832}
   TopDownPan: {fileID: 1568336019}
+  doubleclicked: 0
+  Pan: {fileID: 21300000, guid: 82b9000cca27b9541bec92d2735db42e, type: 3}
+  Beef: {fileID: 1510101203}
+  CookedBeef: {fileID: 21300000, guid: 6b9f7643e8040114f87db59bebe6aaa2, type: 3}
+  PanObject: {fileID: 296211544}
+  Whisk: {fileID: 835307284}
+  Bowl: {fileID: 1742670960}
 --- !u!1 &326792349
 GameObject:
   m_ObjectHideFlags: 0
@@ -4949,6 +4955,7 @@ GameObject:
   m_Component:
   - component: {fileID: 699495833}
   - component: {fileID: 699495834}
+  - component: {fileID: 699495835}
   m_Layer: 0
   m_Name: StoveTop
   m_TagString: Untagged
@@ -4988,6 +4995,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 883cc919ba5a54141ac01bc721d27183, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &699495835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699495832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f68797f89538184da58df3245cc6382, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Parent: {fileID: 1847513725}
+  StoveTop: {fileID: 699495832}
+  GlobalVariables: {fileID: 759819944}
+  Pan: {fileID: 296211544}
+  CookPan: {fileID: 21300000, guid: 506a8e7dac7ffcd4d831dbe8b1d7417c, type: 3}
 --- !u!1 &712443702
 GameObject:
   m_ObjectHideFlags: 0
@@ -5533,6 +5557,7 @@ MonoBehaviour:
   BeefInPan: 0
   Cooking: 0
   Cooked: 0
+  BeefOnBoard: 0
 --- !u!4 &759819945
 Transform:
   m_ObjectHideFlags: 0
@@ -8921,7 +8946,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BLoco: {fileID: 1510101206}
   LocoB: {fileID: 1742670962}
+  PLoco: {fileID: 296211548}
   BowlSpriteSwap: {fileID: 1742670966}
+  GlobalVariables: {fileID: 759819944}
+  PanSpriteSwap: {fileID: 296211550}
 --- !u!1 &1531492273
 GameObject:
   m_ObjectHideFlags: 0
@@ -9570,6 +9598,144 @@ Transform:
   m_Father: {fileID: 420586945}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1638014453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1638014454}
+  - component: {fileID: 1638014455}
+  - component: {fileID: 1638014456}
+  - component: {fileID: 1638014457}
+  m_Layer: 0
+  m_Name: CuttingBeef
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1638014454
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638014453}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.469, y: -0.615, z: 5.091}
+  m_LocalScale: {x: 4.3, y: 4.3, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1772909192}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1638014455
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638014453}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 14
+  m_Sprite: {fileID: 21300000, guid: d5705defda79aee48a6bdbdfa55b311f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.5625, y: 1.5625}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &1638014456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638014453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdf24f49392b2514cae5728fe8981bb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Beef1: {fileID: 21300000, guid: 3d1afa851657860498a0b5e4ca579cb1, type: 3}
+  Beef2: {fileID: 21300000, guid: ab4efb056aa16ec479e063d98bc23c1e, type: 3}
+  Beef3: {fileID: 21300000, guid: d94237630996c724681cc86a28a943d0, type: 3}
+  Beef4: {fileID: 21300000, guid: d7d6a1da2667dd54ea12d89746463038, type: 3}
+  Parent: {fileID: 1847513725}
+  facilities: {fileID: 1955529763}
+  cuts: 0
+--- !u!60 &1638014457
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638014453}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.5625, y: 1.5625}
+    newSize: {x: 1.5625, y: 1.5625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.16760397, y: 0.12668292}
+      - {x: 0.09619253, y: 0.12746362}
+      - {x: 0.017333124, y: 0.08505347}
+      - {x: -0.090713456, y: 0.08003935}
+      - {x: -0.15933302, y: 0.046474744}
+      - {x: -0.15557992, y: -0.013340138}
+      - {x: -0.050456524, y: -0.062166475}
+      - {x: 0.14641218, y: -0.061267003}
+      - {x: 0.23133302, y: -0.0119803175}
+      - {x: 0.23409073, y: 0.08414148}
 --- !u!1 &1667970985
 GameObject:
   m_ObjectHideFlags: 0
@@ -10222,6 +10388,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1772909192}
   - component: {fileID: 1772909193}
+  - component: {fileID: 1772909194}
   m_Layer: 0
   m_Name: ChoppingArea
   m_TagString: Untagged
@@ -10245,6 +10412,7 @@ Transform:
   - {fileID: 1331211666}
   - {fileID: 1115341806}
   - {fileID: 1226622831}
+  - {fileID: 1638014454}
   m_Father: {fileID: 1955529764}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10260,6 +10428,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 883cc919ba5a54141ac01bc721d27183, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1772909194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772909191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c204639106fc93459d07854aa515d89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalVariables: {fileID: 759819944}
+  Knife: {fileID: 2800000, guid: dfbda83fabe6cf340bfe49b987140145, type: 3}
 --- !u!1 &1782232027
 GameObject:
   m_ObjectHideFlags: 0
@@ -11059,6 +11241,7 @@ MonoBehaviour:
   FArrow: {fileID: 15645920}
   FArrowImage: {fileID: 1174615864}
   Knife: {fileID: 1373745125}
+  RArrow: {fileID: 1865525504}
 --- !u!1 &1873388513
 GameObject:
   m_ObjectHideFlags: 0
@@ -11683,7 +11866,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1955529763}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 561.8962, y: 214.7814, z: -9.173411}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -12141,8 +12324,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2047226737}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -260.13596, y: -41.469147, z: 34.442486}
-  m_LocalScale: {x: 212.69753, y: 204.73778, z: 1}
+  m_LocalPosition: {x: -258.9266, y: -26.4459, z: 34.442486}
+  m_LocalScale: {x: 211.16052, y: 223.9514, z: 1}
   m_Children: []
   m_Father: {fileID: 1847513726}
   m_RootOrder: 16
@@ -12194,13 +12377,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2047226737}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 508393a095883ed4b9c5777d548bca3f, type: 3}
+  m_Script: {fileID: 11500000, guid: f2292f94769312445bd6e67e02f638d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   GlobalVariables: {fileID: 759819944}
   Chopping: {fileID: 1772909191}
-  BeefBoard: {fileID: 21300000, guid: 592b22c0c7d541f4db40beb0c51161ba, type: 3}
-  Everything: {fileID: 1847513725}
+  BeefBoard: {fileID: 21300000, guid: 5e35f54d0be461f439b51f201b4985a1, type: 3}
+  Beef: {fileID: 1510101203}
+  Parent: {fileID: 1847513725}
 --- !u!50 &2047226743
 Rigidbody2D:
   serializedVersion: 4
@@ -12402,7 +12586,7 @@ MonoBehaviour:
   GlobalVariables: {fileID: 759819944}
   Beef1: {fileID: 21300000, guid: 3d37e474341c98343803a6cfe1094a6f, type: 3}
   Beef2: {fileID: 21300000, guid: 5f6115fd08765e94a8d6597cfa9a894f, type: 3}
-  Beef3: {fileID: 21300000, guid: 6b9f7643e8040114f87db59bebe6aaa2, type: 3}
+  Beef3: {fileID: 21300000, guid: d5705defda79aee48a6bdbdfa55b311f, type: 3}
   Time: 0
 --- !u!1 &2062404471
 GameObject:
