@@ -11,6 +11,11 @@ public class Cutting : MonoBehaviour
     public Sprite Beef4;
     public GameObject Parent;
     public GameObject facilities;
+    public GlobalVariables GlobalVariables;
+    public GameObject Beef;
+    public GameObject Board;
+    public Sprite EmptyBoard;
+    public Sprite CutBeef;
     public int cuts = 0;
 
     //Cutting how many cuts.
@@ -39,6 +44,13 @@ public class Cutting : MonoBehaviour
             this.GetComponent<SpriteRenderer>().sprite = Beef4;
             Parent.SetActive(true);
             facilities.SetActive(false);
+            Beef.SetActive(true);
+            GlobalVariables.AtBoard = false;
+            GlobalVariables.InDefault = true;
+            GlobalVariables.BeefOnBoard = false;
+            GlobalVariables.Cut = true;
+            Board.GetComponent<SpriteRenderer>().sprite = EmptyBoard;
+            Beef.GetComponent<SpriteRenderer>().sprite = CutBeef;
         }
     }
 }

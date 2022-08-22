@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StoveArrow : MonoBehaviour
 {
-        //Calling the stove background, ChoppingBoard, Arrows and Global Variables.
+    //Calling the stove background, ChoppingBoard, Arrows, game objects and Global Variables.
     public GameObject Stove;
     public GlobalVariables GlobalVariables;
     public GameObject LeftArrowImage;
@@ -19,6 +19,10 @@ public class StoveArrow : MonoBehaviour
     public GameObject Bowl;
     public GameObject Thyme;
     public GameObject SaltandPepper;
+    public GameObject Salad;
+    public Transform bowl;
+    public GameObject Beef;
+    public Transform beef;
 
     void Update()
     {
@@ -36,7 +40,16 @@ public class StoveArrow : MonoBehaviour
     //Changes background Onclick and activates arrows.
     public void Onclick()
     {
+        if(bowl.position.y < 93)
+        {
+            Bowl.SetActive(false);
+        }
+        if(beef.position.x > 355 && beef.position.x < 680)
+        {
+            Beef.SetActive(false);
+        }
         Thyme.SetActive(false);
+        Salad.SetActive(false);
         SaltandPepper.SetActive(false);
         LJuice.SetActive(false);
         OOil.SetActive(false);

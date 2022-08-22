@@ -16,7 +16,11 @@ public class LeftArrow : MonoBehaviour
     public GameObject FArrow;
     public GameObject FArrowImage;
     public GameObject Knife;
-
+    public GameObject Whisk;
+    public GameObject Plate;
+    public GameObject Bowl;
+    public GameObject Pan;
+    
     //Making leftarrow dissapear on certain scenes.
     void Update()
     {
@@ -38,6 +42,13 @@ public class LeftArrow : MonoBehaviour
     //Changes background Onclick and make cetain objects appear and dissapear.
     public void Onclick()
     {
+        Pan.SetActive(true);
+        if(GlobalVariables.EmptyBowl == true)
+        {
+        Bowl.SetActive(true);
+        }
+        Plate.SetActive(true);
+        Whisk.SetActive(true);
         Knife.SetActive(true);  
         Stove.SetActive(false);
         DefaultBackground.SetActive(true);

@@ -16,6 +16,16 @@ public class RightArrow : MonoBehaviour
     public GameObject FArrowImage;
     public GameObject Knife;
     public GameObject RArrow;
+    public GameObject Whisk;
+    public Transform whisk;
+    public GameObject Plate;
+    public Transform plate;
+    public GameObject Bowl;
+    public Transform bowl;
+    public GameObject Pan;
+    public Transform pan;
+    public GameObject KNife;
+    public Transform knife;
 
     void Update()
     {
@@ -29,6 +39,26 @@ public class RightArrow : MonoBehaviour
     //Changes background Onclick and activates arrows.
     public void Onclick()
     {
+        if(whisk.position.y < 93)
+        {
+            Whisk.SetActive(false);
+        }
+        if(plate.position.y < 93)
+        {
+            Plate.SetActive(false);
+        }
+        if(bowl.position.y < 93)
+        {
+            Bowl.SetActive(false);
+        }
+        if(pan.position.y < 93)
+        {
+            Pan.SetActive(false);
+        }
+        if(knife.position.y < 93)
+        {
+            KNife.SetActive(false);
+        }
         Knife.SetActive(false);
         Stove.SetActive(true);
         GameObject.Find("DefaultBackground").SetActive(false);

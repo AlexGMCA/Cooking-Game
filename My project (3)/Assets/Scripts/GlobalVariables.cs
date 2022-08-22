@@ -43,4 +43,14 @@ public class GlobalVariables : MonoBehaviour
     public bool Cooked = false;
     // This one is to check if the beef is on the board.
     public bool BeefOnBoard = false;
+    //This one checks if the plate is empty.
+    public bool EmptyPlate = true;
+    //This one checks to see is the plate has salad on it.
+    public bool SaladOnPlate = false;
+    //This one checks to see if the plate has the steak on it.
+    public bool SteakOnPlate = false;
+    //Checks if the object is cut.
+    public bool Cut = false;
+    //Checks if the dish is done.
+    public bool done = false;
 }

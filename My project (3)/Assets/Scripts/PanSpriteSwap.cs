@@ -23,7 +23,7 @@ public class PanSpriteSwap : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //Detects whether or not its beef.
-        if(collision.gameObject.name == ("Beef") && GlobalVariables.Marinated == true)
+        if(collision.gameObject.name == ("Beef") && GlobalVariables.Marinated == true && GlobalVariables.Cut == false)
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = BeefPan;
             GlobalVariables.BeefInPan = true;
@@ -48,9 +48,10 @@ public class PanSpriteSwap : MonoBehaviour
     //Checks to see if the object has been clicked enough to seperate.
     void Update()
     {
-        if(doubleclicked > 2 && GlobalVariables.BeefOnBoard == false)
+        if(doubleclicked > 2 && GlobalVariables.BeefOnBoard == false && GlobalVariables.Cut == false)
         {
             Beef.SetActive(true);
+            GlobalVariables.BeefInPan = false;
             Beef.GetComponent<SpriteRenderer>().sprite = CookedBeef;
             this.gameObject.GetComponent<SpriteRenderer>().sprite = Pan;
         }

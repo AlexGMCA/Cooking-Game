@@ -19,6 +19,7 @@ public class FridgeArrow : MonoBehaviour
     public GameObject bowl;
     public GameObject Thyme;
     public GameObject SaltandPepper;
+    public GameObject Salad;
 
     void Update()
     {
@@ -35,6 +36,7 @@ public class FridgeArrow : MonoBehaviour
     //The on click function which will change backgrounds.
     public void OnClick()
     {
+        Salad.SetActive(true);
         Thyme.SetActive(true);
         SaltandPepper.SetActive(true);
         bowl.SetActive(true);

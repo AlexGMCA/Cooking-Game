@@ -1,14 +1,17 @@
-    using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Invis : MonoBehaviour
 {
-        private void OnCollisionEnter2D(Collision2D collision)
+    public GlobalVariables GlobalVariables;
+
+    // Update is called once per frame
+    void Update()
     {
-        if(collision.gameObject.name == ("Choppingboard"))
+        if(GlobalVariables.SteakOnPlate || GlobalVariables.BeefOnBoard)
         {
-        gameObject.SetActive(false);
-        }
+            this.gameObject.SetActive(false);
+        }    
     }
 }

@@ -11,11 +11,12 @@ public class BoardSwapSprite : MonoBehaviour
     public GameObject Beef;
     public GameObject Parent;
 
+
     //Collision detector.
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //Checks if the object is beef.
-        if(collision.gameObject.name == ("Beef"))
+        if(collision.gameObject.name == ("Beef") && GlobalVariables.Cooked == true && GlobalVariables.Cut == false)
         {
         Beef.SetActive(false);
         this.gameObject.GetComponent<SpriteRenderer>().sprite = BeefBoard;
@@ -31,7 +32,7 @@ public class BoardSwapSprite : MonoBehaviour
             Parent.SetActive(false);
             GlobalVariables.InDefault = false;
             GlobalVariables.cuttable = false;
-            GlobalVariables.AtBoard = false;
+            GlobalVariables.AtBoard = true;
         }
     }
 }
