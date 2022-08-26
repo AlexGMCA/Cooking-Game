@@ -5,13 +5,14 @@ using UnityEngine;
 public class Invis : MonoBehaviour
 {
     public GlobalVariables GlobalVariables;
+    public GameObject Beef;
 
     // Update is called once per frame
     void Update()
     {
         if(GlobalVariables.SteakOnPlate || GlobalVariables.BeefOnBoard)
         {
-            this.gameObject.SetActive(false);
+            Beef.SetActive(false);
         }    
     }
 }
