@@ -6,9 +6,12 @@ public class BeefColourChange : MonoBehaviour
 {
     //Calling the different stages of beef, global variables and making the two variables use in this script.
     public GlobalVariables globalVariables;
+    public Sprite Beef;
     public Sprite Beef1;
     public Sprite Beef2;
     public Sprite Beef3;
+    public Sprite Beef4;
+    public Sprite Beef5;
     public int Time = 0;
     public bool flip = false;
     public GameObject Arrow;
@@ -19,7 +22,7 @@ public class BeefColourChange : MonoBehaviour
     {
         if(flip == true)
         {
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = Beef1;
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = Beef;
             flip = false;
             Time = 0;
             Flipped = true;
@@ -53,14 +56,24 @@ public class BeefColourChange : MonoBehaviour
             this.gameObject.GetComponent<SpriteRenderer>().sprite = Beef1;
         }
 
+        if(Time > 500 && Time < 1000 && Flipped == true)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = Beef3;
+        }
+
         if(Time > 1000 && Time < 1500)
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = Beef2;
         }
 
-        if(Time > 1500 && Time < 2000)
+        if(Time > 1000 && Time < 1500 && Flipped == true)
         {
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = Beef3;
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = Beef4;
+        }
+
+        if(Time > 1500 && Time < 2000 && Flipped == true)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = Beef5;
             globalVariables.Cooked = true;
             globalVariables.Cooking = false;
         }
