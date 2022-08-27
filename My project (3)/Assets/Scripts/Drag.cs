@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Drag : MonoBehaviour
 {
+  //Creating a Vector3.
     Vector3 mousePositionOffset;
 
-    //Finds the cords of the cursor.
+    //Finds the cords of the cursor so that it knows where to put the object being dragged.
     private Vector3 GetMouseWorldPosition()
     {
         return Camera.main.ScreenToWorldPoint(Input.mousePosition);
