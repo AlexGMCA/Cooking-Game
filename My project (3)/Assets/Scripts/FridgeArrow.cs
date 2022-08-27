@@ -39,7 +39,6 @@ public class FridgeArrow : MonoBehaviour
         Salad.SetActive(true);
         Thyme.SetActive(true);
         SaltandPepper.SetActive(true);
-        bowl.SetActive(true);
         LJuice.SetActive(true);
         OliveOil.SetActive(true);
         BalsamicVinegar.SetActive(true);
