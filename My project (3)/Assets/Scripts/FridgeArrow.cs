@@ -36,6 +36,10 @@ public class FridgeArrow : MonoBehaviour
     //The on click function which will change backgrounds.
     public void OnClick()
     {
+        if(GlobalVariables.EmptyBowl == false)
+        {
+            bowl.SetActive(true);
+        }
         Salad.SetActive(true);
         Thyme.SetActive(true);
         SaltandPepper.SetActive(true);

@@ -31,16 +31,12 @@ public class StoveArrow : MonoBehaviour
             gameObject.SetActive(false);
             SArrowImage.SetActive(false);
         }
-        if(GlobalVariables.EmptyBowl == false && GlobalVariables.InFridge == false)
-        {
-            Bowl.SetActive(false);
-        }
     }
 
     //Changes background Onclick and activates arrows.
     public void Onclick()
     {
-        if(bowl.position.y < 93)
+        if(GlobalVariables.EmptyBowl == false)
         {
             Bowl.SetActive(false);
         }

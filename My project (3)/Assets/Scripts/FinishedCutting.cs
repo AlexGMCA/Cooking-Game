@@ -27,7 +27,10 @@ public class FinishedCutting : MonoBehaviour
         CutBoard.SetActive(false);
         parent.SetActive(true);
         Board.GetComponent<SpriteRenderer>().sprite = EmptyBoard;
+        if(GlobalVariables.done == false)
+        {
         Steak.SetActive(true);
+        }
         Steak.GetComponent<SpriteRenderer>().sprite = CutBeef;
     }
     }
