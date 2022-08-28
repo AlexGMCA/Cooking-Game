@@ -19,19 +19,19 @@ public class FinishedCutting : MonoBehaviour
 
     void Update()
     {
-    if(line1.activeSelf == false && line2.activeSelf == false && line3.activeSelf == false && line4.activeSelf == false)
+        //Reactives default background after the cutting is done.
+    if(line1.activeSelf == false && line2.activeSelf == false && line3.activeSelf == false && line4.activeSelf == false && GlobalVariables.SteakOnPlate == false)
     {
         GlobalVariables.AtBoard = false;
         GlobalVariables.Cut = true;
+        Steak.SetActive(true);
         GlobalVariables.BeefOnBoard = false;
         CutBoard.SetActive(false);
         parent.SetActive(true);
         Board.GetComponent<SpriteRenderer>().sprite = EmptyBoard;
-        if(GlobalVariables.done == false)
-        {
-        Steak.SetActive(true);
-        }
         Steak.GetComponent<SpriteRenderer>().sprite = CutBeef;
     }
-    }
 }
+
+}
+

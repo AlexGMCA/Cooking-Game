@@ -13,7 +13,7 @@ public class Finishedcooking : MonoBehaviour
 
     void Update()
     {
-        //Telling the game that the beef is not cooked and to change scenes.
+        //Telling the game that the beef is  cooked and to change scenes.
         if(GlobalVariables.Cooked == true && GlobalVariables.AtBoard == false)
         {
             Parent.SetActive(true);
