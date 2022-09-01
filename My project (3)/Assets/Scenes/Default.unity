@@ -1277,7 +1277,7 @@ MonoBehaviour:
     Click the right arrow twice going to the fridge.
 
     4.(open fridge by clicking
-    it) Grab the balsamic acid, olive oil, lemon juice, thyme and salt and pepper
+    it) Grab the balsamic vinegar, olive oil, lemon juice, thyme and salt and pepper
     colliding them with the bowl(make sure you do it in that order, close fridge
     by pressing the bottom of it).
 
@@ -1289,63 +1289,64 @@ MonoBehaviour:
 
     7. Grab your beef and put it in the bowl.
 
-    8.Close
-    the fridge
+    8.Put
+    the bowl into the fridge, Close the fridge
 
-    9.Click the timer 8 times, this will set it to 8 hours(not actually
-    8 hours, in real life wait 8 hours or overnight).
+    9.Click the timer 8 times, this
+    will set it to 8 hours(not actually 8 hours, in real life wait 8 hours or overnight).
 
-    10.Click the bowl three
-    times to remove beef.
+    10.Click
+    the bowl three times to remove beef.
 
 
     Step 2 - Cooking the beef.
 
 
-    1. Go back to the
-    start and open the right cupboard.
-
-    2. grab your pan and put it on the bench.
-
-    3.
-    put the beef in the pan(might still be at fridge area).
-
-    4. go to the stove
-    area and hit the pan on the stove.
-
-    5.Press the element dial at the bottom
-    to start cooking.
-
-    6.Once done triple click the pan to remove steak(to avoid
-    lag make sure pan is not touching stove).
-
-
-    Step 3 - Cutting the steak.
-
-
     1.
-    Put the steak on the chopping board.
+    Go back to the start and open the right cupboard.
 
-    2. Grab your knife from the right cupboard
-    and touch the board with it.
+    2. grab your pan and put
+    it on the bench.
 
-    3. Click the steak to cut it into even pieces(in
-    real life make sure to not tear the steak).
+    3. put the beef in the pan(might still be at fridge area).
+
+    4.
+    go to the stove area and hit the pan on the stove.
+
+    5.Press the element dial
+    at the bottom to start cooking.
+
+    6.Once done triple click the pan to remove
+    steak(to avoid lag make sure pan is not touching stove).
 
 
-    Step 4 - Plating.
+    Step 3 - Cutting
+    the steak.
 
 
-    1.Grab
-    your plate from the left cupboard and put it on the bench.
+    1. Put the steak on the chopping board.
 
-    2. go to the
-    fridge area and put the salad on the plate.
+    2. Grab your knife
+    from the right cupboard and touch the board with it.
 
-    3.Put the steak on the plate.
+    3. Click the steak
+    to cut it into even pieces(in real life make sure to not tear the steak).
 
-    4.Put
-    the remaining sauce from the marinade on the plate.'
+
+    Step
+    4 - Plating.
+
+
+    1.Grab your plate from the left cupboard and put it on the
+    bench.
+
+    2. go to the fridge area and put the salad on the plate.
+
+    3.Put
+    the steak on the plate.
+
+    4.Put the remaining sauce from the marinade on the
+    plate.'
 --- !u!222 &89248664
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3624,6 +3625,88 @@ Transform:
   m_Father: {fileID: 699495833}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &352276157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 352276159}
+  - component: {fileID: 352276158}
+  m_Layer: 0
+  m_Name: PanCords
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &352276158
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352276157}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &352276159
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352276157}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 807, y: 230, z: 0}
+  m_LocalScale: {x: 0.8048617, y: 0.9421209, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &370428054
 GameObject:
   m_ObjectHideFlags: 0
@@ -4044,6 +4127,7 @@ Transform:
   - {fileID: 1164599360}
   - {fileID: 452214888}
   - {fileID: 1610095681}
+  - {fileID: 1302616182}
   m_Father: {fileID: 1847513726}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4368,6 +4452,7 @@ GameObject:
   m_Component:
   - component: {fileID: 457338034}
   - component: {fileID: 457338035}
+  - component: {fileID: 457338036}
   m_Layer: 0
   m_Name: Game
   m_TagString: Untagged
@@ -4406,6 +4491,18 @@ MonoBehaviour:
   GlobalVariables: {fileID: 759819944}
   Knife: {fileID: 2800000, guid: fca96baf3b88fe04990b564bb86921e3, type: 3}
   Normal: {fileID: 2800000, guid: 4e238f0e1987ebe4abca2900bc3c60d5, type: 3}
+--- !u!114 &457338036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457338033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07fb75a012a3f57408e9953c358ed17e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &458766479
 GameObject:
   m_ObjectHideFlags: 0
@@ -7111,6 +7208,8 @@ MonoBehaviour:
   GlobalVariables: {fileID: 759819944}
   Pan: {fileID: 296211544}
   CookPan: {fileID: 21300000, guid: 506a8e7dac7ffcd4d831dbe8b1d7417c, type: 3}
+  BPan: {fileID: 296211548}
+  PanCords: {fileID: 352276159}
 --- !u!1 &707085204
 GameObject:
   m_ObjectHideFlags: 0
@@ -7988,8 +8087,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 786270577}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 76.5038, y: -351.33493, z: 34.442497}
-  m_LocalScale: {x: 204.0102, y: 212.28697, z: 1}
+  m_LocalPosition: {x: -4.4506, y: -258.71, z: 34.442497}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1847513726}
   m_RootOrder: 21
@@ -10997,6 +11096,88 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0.9528302, g: 0.9528302, b: 0.9528302, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1302616181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1302616182}
+  - component: {fileID: 1302616183}
+  m_Layer: 0
+  m_Name: Midcupboard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1302616182
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302616181}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.421092, y: -0.975167, z: 2.642311}
+  m_LocalScale: {x: 0.019845339, y: 0.616602, z: 1}
+  m_Children: []
+  m_Father: {fileID: 420586945}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1302616183
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302616181}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 8
+  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Color: {r: 0.34901962, g: 0.18431373, b: 0.011764707, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
