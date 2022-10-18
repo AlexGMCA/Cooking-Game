@@ -40,7 +40,7 @@ public class StoveArrow : MonoBehaviour
         {
             Bowl.SetActive(false);
         }
-        if(beef.position.x > 355 && beef.position.x < 680)
+        if(beef.position.x > 660 && beef.position.x < 1275)
         {
             Beef.SetActive(false);
         }

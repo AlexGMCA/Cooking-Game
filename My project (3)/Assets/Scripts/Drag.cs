@@ -1,3 +1,4 @@
+using System.Reflection.Emit;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,11 @@ public class Drag : MonoBehaviour
 {
   //Creating a Vector3.
     Vector3 mousePositionOffset;
+
+    void Update()
+    {
+      Debug.Log(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+    }
 
     //Finds the cords of the cursor so that it knows where to put the object being dragged.
     private Vector3 GetMouseWorldPosition()

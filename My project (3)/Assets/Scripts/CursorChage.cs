@@ -8,6 +8,7 @@ public class CursorChage : MonoBehaviour
     public GlobalVariables GlobalVariables;
     public Texture2D Knife;
     public Texture2D Normal;
+    public Texture2D Grab;
 
     // Update is called once per frame
     void Update()
@@ -22,5 +23,9 @@ public class CursorChage : MonoBehaviour
     {
         Cursor.SetCursor(Normal, Vector2.zero, CursorMode.ForceSoftware);
     }
+
+        if(Input.GetMouseButton(0) && GlobalVariables.AtBoard == false){
+        Cursor.SetCursor(Grab, Vector2.zero, CursorMode.ForceSoftware);
+        }
     }
 }

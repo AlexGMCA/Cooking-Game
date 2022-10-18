@@ -97,12 +97,12 @@ public class BowlSpriteSwap : MonoBehaviour
         }
 
         //registering that the bowl is in the fridge.
-        if(XBowl.position.x > 355 && XBowl.position.x < 680)
+        if(XBowl.position.x > 660 && XBowl.position.x < 1275)
         {
             GlobalVariables.AtFridge = true;
         }
 
-        if(XBowl.position.x < 355 || XBowl.position.x > 680)
+        if(XBowl.position.x < 660 || XBowl.position.x > 1275)
         {
             GlobalVariables.AtFridge = false;
         }

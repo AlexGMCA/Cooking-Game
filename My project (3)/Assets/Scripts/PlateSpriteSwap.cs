@@ -15,7 +15,6 @@ public class PlateSpriteSwap : MonoBehaviour
     public GameObject Game;
     public GameObject Congrats;
     public Transform Steak;
-    public Transform PosChange;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {   
@@ -33,7 +32,7 @@ public class PlateSpriteSwap : MonoBehaviour
             Beef.SetActive(false);
             GlobalVariables.SaladOnPlate = false;
             GlobalVariables.SteakOnPlate = true;
-            Steak.position = PosChange.position;
+            Steak.position = new Vector2(-70, -70);
         }
         //Checks if you can put sauce on dish.
         if(collision.gameObject.name == ("Bowl") && GlobalVariables.SteakOnPlate == true)

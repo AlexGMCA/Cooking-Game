@@ -39,23 +39,23 @@ public class RightArrow : MonoBehaviour
     //Changes background Onclick and activates arrows.
     public void Onclick()
     {
-        if(whisk.position.y < 93)
+        if(whisk.position.y < 350)
         {
             Whisk.SetActive(false);
         }
-        if(plate.position.y < 93)
+        if(plate.position.y < 350)
         {
             Plate.SetActive(false);
         }
-        if(bowl.position.y < 93)
+        if(bowl.position.y < 350)
         {
             Bowl.SetActive(false);
         }
-        if(pan.position.y < 93)
+        if(pan.position.y < 350)
         {
             Pan.SetActive(false);
         }
-        if(knife.position.y < 93)
+        if(knife.position.y < 350)
         {
             KNife.SetActive(false);
         }
